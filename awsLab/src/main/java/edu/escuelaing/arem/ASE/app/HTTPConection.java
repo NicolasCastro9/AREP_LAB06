@@ -10,8 +10,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase para realizar conexiones HTTP con un grupo de servidores de registro de logs.
+ */
 public class HTTPConection {
 
+    // Constantes para el agente de usuario y los servidores de registro de logs
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String[] LOG_SERVERS = new String[] { "http://service1:4567/logservice?message=",
             "http://service2:4567/logservice?message=",
@@ -21,8 +25,16 @@ public class HTTPConection {
     private static int currentServer = 0;
 
 
-
+    /**
+     * Metodo que obtiene los logs de un servidor de registro de logs.
+     * @param message el mensaje a enviar al servidor de logs
+     * @return una lista de cadenas con la respuesta del servidor
+     * @throws IOException si ocurre un error de entrada/salida
+     * @throws MalformedURLException si la URL es incorrecta
+     * @throws ProtocolException si ocurre un error de protocolo HTTP
+     */
      public static List<String> getLogs(String message) throws IOException, MalformedURLException, ProtocolException {
+        // Construiye la URL utilizando el balanceo de carga Round Robin
         String GET_URL = rotateRoundRobinServer() + message;
         URL obj = new URL(GET_URL);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -56,6 +68,10 @@ public class HTTPConection {
         return null;
     }
 
+    /**
+     * Metodo que ealiza el balanceo de carga Round Robin entre los servidores de registro de logs.
+     * @return la URL del servidor de registro de logs seleccionado
+     */
     public static String rotateRoundRobinServer() {
         currentServer = (currentServer + 1) % LOG_SERVERS.length;
         System.out.println( "Server : "  + LOG_SERVERS[currentServer]);

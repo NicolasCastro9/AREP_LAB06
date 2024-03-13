@@ -1,8 +1,16 @@
 package edu.escuelaing.arem.ASE.app;
 
 import static spark.Spark.*;
+
+/**
+ * Clase principal que inicia el servicio Round Robin.
+ */
 public class RoundRobin 
 {
+    /**
+     * Método principal que inicia el servicio Round Robin.
+     * @param args argumentos de la línea de comandos (no utilizados)
+     */
     public static void main( String[] args )
     {
         port(getPort());
@@ -13,6 +21,10 @@ public class RoundRobin
             return HTTPConection.getLogs(val);
         });
     }
+    /**
+     * Obtiene el puerto en el que se ejecutará el servidor web.
+     * @return el puerto del servidor web
+     */
     private static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
