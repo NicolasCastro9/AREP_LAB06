@@ -32,3 +32,13 @@ http://localhost:35000/
 
 sudo yum install git
 
+git clone https://github.com/NicolasCastro9/AREP_LAB06.git
+
+sudo yum install maven
+
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+
