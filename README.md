@@ -69,6 +69,29 @@ http://localhost:35000/
 
 
 
+# ARQUITECTURA Y DISEÑO:
+
+Arquitectura de Microservicios: La aplicación está compuesta por varios servicios que se ejecutan de forma independiente y colaboran entre sí para proporcionar la funcionalidad completa
+
+Modelo-Vista-Controlador (MVC): se emplea principalmente debido a la estructura del código y la forma en que Spark Java, el framework utilizado, está diseñado para trabajar. 
+
+
+# Construido con
+
+Java: plataforma informática de lenguaje de programación
+
+SparkJava: microframework web para Java que facilita la creación de aplicaciones web simples y rápidas
+
+MongoDB: base de datos NoSQL orientada a documentos
+
+Maven: framework de gestión de proyectos de software
+
+Docker: sistema operativo para contenedores
+
+
+# DESPLIEGUE EN AWS
+
+
 
 sudo yum install git
 
