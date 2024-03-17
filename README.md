@@ -26,3 +26,9 @@ http://localhost:35000/
 ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/ec32f023-bb2f-4921-921c-986abd366421)
 
 ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/cfac9d86-dd3a-42cc-b2fa-0a4f35be5e20)
+
+
+
+
+sudo yum install git
+
