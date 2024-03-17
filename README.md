@@ -1,4 +1,26 @@
-# AREP_LAB06
+# PATRONES ARQUITECTURALES
+En este Laboratorio se utilizo Docker para correr un servicio de logs que se conectan a mongoDB y un servidor web con un balanceador de carga que envia el log a los diferentes instancias de logservices. Tambien desplegaremos la aplicación en la nube con una instancia EC2 de AWS.
+
+# Clases
+RoundRobin.java: Esta clase implementa el algoritmo RoundRobin, inicia un servidor web simple que escucha en un puerto específico y responde a dos rutas diferentes: una ruta devuelve un mensaje estático y la otra ruta realiza alguna operación de registro basada en un parámetro de consulta.
+
+LogService.java:  implementa un servicio web que permite registrar mensajes en una base de datos MongoDB y consultar los últimos registros registrados.
+
+HTTPConnection.java: Clase que proporciona funcionalidad para realizar conexiones HTTP con servidores de registro de logs utilizando el algoritmo de balanceo de carga Round Robin
+
+
+# Pre-Requisitos
+Java: Es un lenguaje de programación de propósito general orientado a objetos, portátil y muy versátil.
+
+Maven: Es una herramienta que maneja el ciclo de vida del programa.
+
+Git: Es un sistema de control de versiones distribuido (VCS).
+
+Docker: Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software.
+
+# Dependencias
+
+
 
 https://github.com/NicolasCastro9/AREP_LAB06.git
 
