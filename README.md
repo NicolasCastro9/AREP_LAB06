@@ -1,5 +1,5 @@
 # PATRONES ARQUITECTURALES
-En este Laboratorio se utilizo Docker para correr un servicio de logs que se conectan a mongoDB y un servidor web con un balanceador de carga que envia el log a los diferentes instancias de logservices. Tambien desplegaremos la aplicación en la nube con una instancia EC2 de AWS.
+En este Laboratorio utilizaremos Docker para correr un servicio de logs que se conectan a mongoDB y un servidor web con un balanceador de carga que envia el log a los diferentes instancias de logservices. Tambien desplegaremos la aplicación en la nube con una instancia EC2 de AWS.
 
 # Clases
 RoundRobin.java: Esta clase implementa el algoritmo RoundRobin, inicia un servidor web simple que escucha en un puerto específico y responde a dos rutas diferentes: una ruta devuelve un mensaje estático y la otra ruta realiza alguna operación de registro basada en un parámetro de consulta.
