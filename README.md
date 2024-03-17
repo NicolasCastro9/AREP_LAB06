@@ -92,6 +92,11 @@ Docker: sistema operativo para contenedores
 # DESPLIEGUE EN AWS
 
 
+https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/dac86ccc-7ff0-4cae-a200-45c2d5722a00
+
+
+
+
 
 sudo yum install git
 
