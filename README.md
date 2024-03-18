@@ -141,6 +141,10 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 
 12. Ingresamos a la carpeta donde esta el pom e ingresamos el comando pra instalar las dependencias
 
+```
+mvn clean install
+```
+
 ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/b7db671a-e02a-47f4-96df-8f1a4d79fa91)
 
 13. Ejecutamos la aplicación de Docker Compose en segundo plano:
@@ -148,12 +152,9 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/5479a8f6-a374-4417-ab01-407458a95cc2)
 
 
-```
-mvn clean install
-```
+14. Ya podemos ver la instancia desplegada con la aplicación:
 
-
-
+# VIDEO
 https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/dac86ccc-7ff0-4cae-a200-45c2d5722a00
 
 
@@ -166,10 +167,6 @@ Nicolas Castro Jaramillo
 # Licencia
 Este proyecto está bajo la licencia MIT.
 
-
-sudo usermod -aG docker $USER
-
-sudo chmod +x /usr/local/bin/docker-compose
 
 
 
