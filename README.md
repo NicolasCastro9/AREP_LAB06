@@ -68,6 +68,11 @@ http://localhost:35000/
 ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/cfac9d86-dd3a-42cc-b2fa-0a4f35be5e20)
 
 
+6. generamos el javadock
+
+   ```
+   mvn javadoc:javadoc
+   ```
 
 # ARQUITECTURA Y DISEÑO:
 
