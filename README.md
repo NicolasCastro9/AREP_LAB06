@@ -91,20 +91,73 @@ Docker: sistema operativo para contenedores
 
 # DESPLIEGUE EN AWS
 
+1. Creamos una instancia EC2 con Amazon Linux como imagen
+   
+   ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/641ba990-e6e1-4154-b51e-39293bb2dae5)
+
+2. Creamos una nueva regla de entrada
+
+   ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/5e978edf-751b-474b-a69c-c92e8564cef5)
+
+3. En la consola de comandos vamos a la carpeta donde guardamos la llave publica e ingresamos a la instancia por SSH
+
+   ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/c42d4d11-a122-4032-b6ca-42d343e676ab)
+
+4. Instalamos GIT
+   ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/435025b6-3c99-45ce-973f-6685643a41cf)
+
+5. Clonamos el repositorio en la instancia
+   
+   ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/d1f42958-4f14-4751-b61a-450e746de2eb)
+
+6. Instalamos Maven
+
+ ![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/66cf6d19-33dd-4706-ab96-6ed278c38e93)
+
+
+7. Instalamos docker
+
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/c308ef9e-4b82-4fa9-b1a6-0163ca77eebd)
+
+8. Inicializamos el servicio de docker
+
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/29b7bdd2-5dca-4906-8d81-b24980b09a21)
+
+9. Descargamos docker-compose
+
+```
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+```
+
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/a75de03e-b438-47c3-9513-fd68ab81e408)
+
+10. agregamos al usuario actual al grupo docker
+
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/24b55914-a947-45fe-b67e-c2b6c7516bff)
+
+11. otorgamos permisos de ejecución al archivo docker-compose ubicado en /usr/local/bin
+    
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/8eded1e2-25d0-4d60-b715-28212fa9f325)
+
+12. Ingresamos a la carpeta donde esta el pom e ingresamos el comando pra instalar las dependencias
+
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/b7db671a-e02a-47f4-96df-8f1a4d79fa91)
+
+13. Ejecutamos la aplicación de Docker Compose en segundo plano:
+
+![image](https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/5479a8f6-a374-4417-ab01-407458a95cc2)
+
+
+```
+mvn clean install
+```
+
+
 
 https://github.com/NicolasCastro9/AREP_LAB06/assets/98556822/dac86ccc-7ff0-4cae-a200-45c2d5722a00
 
 
 
-
-
-sudo yum install git
-
-git clone https://github.com/NicolasCastro9/AREP_LAB06.git
-
-sudo yum install maven
-
-sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
 
 # Autor
